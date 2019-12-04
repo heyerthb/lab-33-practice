@@ -30,10 +30,10 @@ class Counter extends React.Component{
 
     return (
       <div style={styles.container}>
-        <button style={styles.button} onClick={() => this.context.increment()}> + </button>
+        <button style={styles.button} onClick={() => this.context.decrement()}> - </button>
         <span style={styles.counter}>{this.context.count}</span>
       
-        <button style={styles.button} onClick={() => this.context.decrement()}> - </button>
+        <button style={styles.button} onClick={() => this.context.increment()}> + </button>
       </div>
     );
   }
